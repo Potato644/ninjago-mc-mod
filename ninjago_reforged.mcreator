@@ -1,0 +1,193 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ninjago",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ninjago",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Stun",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ninjagoreforged/potion/StunMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "StunProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stun_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ninjagoreforged/procedures/StunProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StunProcedureAttack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stun_procedure_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ninjagoreforged/procedures/StunProcedureAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementSelection",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_selection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ninjagoreforged/world/inventory/ElementSelectionMenu.java",
+          "src/main/java/net/mcreator/ninjagoreforged/client/gui/ElementSelectionScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementSelectorRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ninjagoreforged/procedures/ElementSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementSelector",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_selector",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ninjago_reforged/models/item/element_selector.json",
+          "src/main/java/net/mcreator/ninjagoreforged/item/ElementSelectorItem.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "element",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"null\""
+    },
+    {
+      "name": "equipped_move_1",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"null\""
+    },
+    {
+      "name": "equipped_move_2",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"null\""
+    },
+    {
+      "name": "equipped_move_3",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"null\""
+    },
+    {
+      "name": "equipped_move_4",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"null\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.ninjago_reforged.element_selection.button_sselightning": "§e☠Lightning",
+      "gui.ninjago_reforged.element_selection.button_ssaearth": "§a🌳Earth",
+      "effect.ninjago_reforged.stun": "Stun",
+      "gui.ninjago_reforged.element_selection.button_water": "§9🌊Water",
+      "gui.ninjago_reforged.element_selection.button_ssbyu_ice": "§b🧊Ice",
+      "item.ninjago_reforged.element_selector.description_0": "Use this item to select your element!",
+      "item_group.ninjago_reforged.ninjago": "Ninjago",
+      "gui.ninjago_reforged.element_selection.button_ss2energy": "§2Energy",
+      "item.ninjago_reforged.element_selector": "Elemental Selector",
+      "gui.ninjago_reforged.element_selection.button_fire": "§c🔥Fire"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ninjago_reforged",
+    "modName": "Ninjago: Reforged",
+    "version": "1.0.0",
+    "description": "A Minecraft mod that adds content from Ninjago to the game!",
+    "author": "Yami",
+    "websiteURL": "https://no-website.com",
+    "license": "Ace3 Style BSD",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Yami - Project Manager, ThePhobiaGod - Developer, Teisestv - Tester",
+    "modElementsPackage": "net.mcreator.ninjagoreforged"
+  },
+  "mcreatorVersion": 202400452410
+}

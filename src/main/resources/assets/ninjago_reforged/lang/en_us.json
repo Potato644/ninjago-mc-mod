@@ -1,0 +1,12 @@
+{
+  "gui.ninjago_reforged.element_selection.button_sselightning": "§e☠Lightning",
+  "gui.ninjago_reforged.element_selection.button_ssaearth": "§a🌳Earth",
+  "effect.ninjago_reforged.stun": "Stun",
+  "gui.ninjago_reforged.element_selection.button_water": "§9🌊Water",
+  "gui.ninjago_reforged.element_selection.button_ssbyu_ice": "§b🧊Ice",
+  "item.ninjago_reforged.element_selector.description_0": "Use this item to select your element!",
+  "item_group.ninjago_reforged.ninjago": "Ninjago",
+  "gui.ninjago_reforged.element_selection.button_ss2energy": "§2Energy",
+  "item.ninjago_reforged.element_selector": "Elemental Selector",
+  "gui.ninjago_reforged.element_selection.button_fire": "§c🔥Fire"
+}

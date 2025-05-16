@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Ace3 Style BSD"
+
+[[mods]]
+modId="ninjago_reforged"
+version="1.0.0"
+displayName="Ninjago: Reforged"
+displayURL="https://no-website.com"
+credits="Yami - Project Manager, ThePhobiaGod - Developer, Teisestv - Tester"
+authors="Yami"
+description="A Minecraft mod that adds content from Ninjago to the game!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.ninjago_reforged]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
