@@ -71,6 +71,7 @@ public class NinjagoReforgedModVariables {
 			clone.equipped_move_2 = original.equipped_move_2;
 			clone.equipped_move_3 = original.equipped_move_3;
 			clone.equipped_move_4 = original.equipped_move_4;
+			clone.race = original.race;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -112,6 +113,7 @@ public class NinjagoReforgedModVariables {
 		public String equipped_move_2 = "\"null\"";
 		public String equipped_move_3 = "\"null\"";
 		public String equipped_move_4 = "\"null\"";
+		public String race = "\"human\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -125,6 +127,7 @@ public class NinjagoReforgedModVariables {
 			nbt.putString("equipped_move_2", equipped_move_2);
 			nbt.putString("equipped_move_3", equipped_move_3);
 			nbt.putString("equipped_move_4", equipped_move_4);
+			nbt.putString("race", race);
 			return nbt;
 		}
 
@@ -135,6 +138,7 @@ public class NinjagoReforgedModVariables {
 			equipped_move_2 = nbt.getString("equipped_move_2");
 			equipped_move_3 = nbt.getString("equipped_move_3");
 			equipped_move_4 = nbt.getString("equipped_move_4");
+			race = nbt.getString("race");
 		}
 	}
 
@@ -164,6 +168,7 @@ public class NinjagoReforgedModVariables {
 					variables.equipped_move_2 = message.data.equipped_move_2;
 					variables.equipped_move_3 = message.data.equipped_move_3;
 					variables.equipped_move_4 = message.data.equipped_move_4;
+					variables.race = message.data.race;
 				}
 			});
 			context.setPacketHandled(true);

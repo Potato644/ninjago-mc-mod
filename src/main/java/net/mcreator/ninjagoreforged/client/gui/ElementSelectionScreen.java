@@ -10,18 +10,16 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ninjagoreforged.world.inventory.ElementSelectionMenu;
-import net.mcreator.ninjagoreforged.init.NinjagoReforgedModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class ElementSelectionScreen extends AbstractContainerScreen<ElementSelectionMenu> implements WidgetScreen {
+public class ElementSelectionScreen extends AbstractContainerScreen<ElementSelectionMenu> {
 	private final static HashMap<String, Object> guistate = ElementSelectionMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	private final static HashMap<String, String> textstate = new HashMap<>();
 	Button button_fire;
 	Button button_water;
 	Button button_ssbyu_ice;
@@ -56,10 +54,6 @@ public class ElementSelectionScreen extends AbstractContainerScreen<ElementSelec
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
-	}
-
-	public HashMap<String, Object> getWidgets() {
-		return guistate;
 	}
 
 	@Override
